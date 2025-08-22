@@ -16,7 +16,6 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    /* cursor: none; has been removed */
 }
 
 /* --- EPIC FEATURE STYLES --- */
@@ -171,6 +170,28 @@ body.critical-hit .main-container {
 .hierarchy-list li.active .rank-indicator {
     color: var(--color-black);
 }
+
+/* --- SPECIAL ITEM GLOW --- */
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 15px #b300b3;
+        border-color: #b300b3;
+    }
+    50% {
+        box-shadow: 0 0 35px var(--color-magenta), inset 0 0 10px #ff80ff;
+        border-color: #ff80ff;
+    }
+    100% {
+        box-shadow: 0 0 15px #b300b3;
+        border-color: #b300b3;
+    }
+}
+
+[data-rank="4"] {
+    /* This is "Devious" */
+    animation: pulse-glow 2.5s infinite ease-in-out;
+}
+
 
 /* --- DEFINITION PANEL --- */
 .definition-container {
