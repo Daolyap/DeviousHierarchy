@@ -1,0 +1,63 @@
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+}
+
+.hierarchy {
+    list-style: none;
+    padding-left: 20px;
+    border-left: 2px solid #800000;
+}
+
+.hierarchy li {
+    margin: 15px 0;
+    position: relative;
+}
+
+.hierarchy li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 20px;
+    height: 2px;
+    background-color: #800000;
+}
+
+.hierarchy span {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a2a2a;
+    border: 1px solid #800000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #ff00ff;
+}
+
+.hierarchy span:hover {
+    background-color: #800000;
+    color: #ff00ff;
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+.hierarchy ul {
+    list-style: none;
+    padding-left: 40px;
+    display: none; /* Initially hidden */
+}
+
+.hierarchy li.open > ul {
+    display: block; /* Shown when parent is open */
+}
