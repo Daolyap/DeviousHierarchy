@@ -4,23 +4,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // Define your words in order of status, from highest (1) to lowest (10).
     const wordHierarchy = [
         {
-            title: 'Quintessential',
-            text: 'Representing the most perfect or typical example of a quality or class. The pure and concentrated essence of a substance.'
+            title: '',
+            text: ''
         },
         {
             title: 'Buffoonery',
             text: 'Behavior that is ridiculous but amusing. A playful, foolish, or theatrical act.'
         },
         {
-            title: 'Ethereal',
-            text: 'Extremely delicate and light in a way that seems too perfect for this world. Heavenly or spiritual.'
-        },
-        {
-            title: 'Splendiferous',
-            text: 'Having or showing splendor; splendid. Magnificent and impressive in appearance.'
+            title: '',
+            text: ''
         },
         {
             title: 'Devious',
+            text: 'Having or showing splendor; splendid. Magnificent and impressive in appearance.'
+        },
+        {
+            title: 'Splendiferous',
             text: 'Showing a skillful use of underhanded tactics to achieve goals. Cleverly scheming.'
         },
         {
@@ -28,20 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
             text: 'A commotion or fuss, especially one caused by conflicting views. A comical disturbance.'
         },
         {
-            title: 'Lackadaisical',
-            text: 'Lacking enthusiasm and determination; carelessly lazy. Without interest, vigor, or determination.'
+            title: '',
+            text: ''
         },
         {
             title: 'Malarkey',
             text: 'Meaningless talk; nonsense. Often used to express disbelief or contempt.'
         },
         {
-            title: 'Brouhaha',
-            text: 'A noisy and overexcited reaction or response to something. A loud confused noise from a number of sources.'
+            title: '',
+            text: ''
         },
         {
-            title: 'Mundane',
-            text: 'Lacking interest or excitement; dull. Of this earthly world rather than a heavenly or spiritual one.'
+            title: '',
+            text: ''
         }
     ];
 
