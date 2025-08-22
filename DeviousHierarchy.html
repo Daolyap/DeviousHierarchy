@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hierarchy</title>
+    <title>WORD STATUS [ONLINE]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <ul class="hierarchy">
-            <li><span>Word 1</span>
-                <ul>
-                    <li><span>Word 2</span></li>
-                    <li><span>Word 3</span>
-                        <ul>
-                            <li><span>Word 4</span></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><span>Word 5</span></li>
-            <li><span>Word 6</span>
-                <ul>
-                    <li><span>Word 7</span></li>
-                    <li><span>Word 8</span></li>
-                    <li><span>Word 9</span></li>
-                    <li><span>Word 10</span></li>
-                </ul>
-            </li>
-        </ul>
+    <!-- EPIC FEATURES: BOOT-UP & AUDIO -->
+    <div id="boot-sequence">
+        <div id="boot-text"></div>
+    </div>
+    <audio id="audio-hover" src="hover.wav" preload="auto"></audio>
+    <audio id="audio-click" src="click.wav" preload="auto"></audio>
+    <audio id="audio-critical" src="critical.wav" preload="auto"></audio>
+    <!-- END EPIC FEATURES -->
+
+    <div class="animated-grid"></div>
+    <div class="vignette-effect"></div>
+
+    <div class="main-container">
+        <div class="hierarchy-container">
+            <div class="list-header">WORD STATUS INDEX</div>
+            <ol class="hierarchy-list"></ol>
+        </div>
+        <div class="definition-container" id="definition-display">
+            <h2 id="definition-title">Awaiting Input...</h2>
+            <p id="definition-text">Select a word to access its definition.</p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
